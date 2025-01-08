@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 130vh;
+      }
+      .block {
+        width: 26%;
+        height: 400px;
+      }
+      .relative {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: stretch;
+      }
+      .one {
+        background-color: aqua;
+        order: 3;
+      }
+      .two {
+        background-color: blueviolet;
+        z-index: 9;
+        height: 200px;
+        order: 1;
+      }
+      .three {
+        background-color: yellowgreen;
+        height: 700px;
+        order: 4;
+      }
+      .four {
+        background-color: red;
+        height: 600px;
+        order: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="relative">
+      <div class="block one"></div>
+      <div class="block two"></div>
+      <div class="block three absolute"></div>
+      <div class="block four"></div>
+    </div>
+  </body>
+</html>

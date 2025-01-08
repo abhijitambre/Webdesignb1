@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .form-control {
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <form action="">
+          <fieldset>
+            <legend>Peronsal Details</legend>
+            <div class="form-control">
+              <label for="fname">First Name</label>
+              <input type="text" name="fname" id="fname" placeholder="First Name"/>
+            </div>
+            <div class="form-control">
+              <label for="lname">Last Name</label>
+              <input type="text" name="lname" id="lname" />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="form-control">
+              <label for="phone">phone</label>
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required />
+            </div>
+            <div class="form-control">
+              <label for="dob">Date of Birth</label>
+              <input type="date" name="dob" id="dob" />
+            </div>
+            <div class="d-flex form-control">
+              <label for="gender">gender</label>
+              <input type="radio" name="gender" id="gender" />male
+              <input type="radio" name="gender" id="gender" />female
+            </div>
+            <div class="d-flex form-control">
+                <input type="checkbox" name="Terms" id="Terms" />Terms & Conditions
+                <input type="checkbox" name="Terms" id="Terms" />Terms & Conditionss
+              </div>
+          </fieldset>
+          <fieldset>
+            <legend>Address</legend>
+            <div class="form-control">
+              <label for="address">Address</label>
+              <textarea name="address" id="address"></textarea>
+            </div>
+            <div class="form-control">
+              <label for="city">city</label>
+              <input type="text" list="city" >
+              <datalist name="city" id="city">
+                <option value="Mumbai">Mumbai</option>
+                <option value="pune">Pune</option>
+                <option value="thane">Thane</option>
+              </datalist>
+            </div>
+            <div class="form-control">
+              <label for="states">State</label>
+              <select name="states" id="states">
+                <option value="maharashtra">maharashtra</option>
+                <option value="delhi">Delhi</option>
+                <option value="punjab">Punjab</option>
+              </select>
+            </div>
+            <div class="form-control">
+              <label for="country">Country</label>
+              <input type="text" name="country" id="country" value="India" />
+            </div>
+            <div class="form-control">
+              <label for="pincode">Pincode</label>
+              <input type="text" name="pincode" id="pincode" />
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

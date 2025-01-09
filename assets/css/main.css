@@ -517,9 +517,9 @@ h6 {
 --------------------------------------------------------------*/
 .footer {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: #2C2F44;
   font-size: 14px;
-  padding-bottom: 50px;
+  padding: 20px 0;
   position: relative;
 }
 
@@ -680,6 +680,10 @@ h6 {
 .footer .credits {
   margin-top: 6px;
   font-size: 13px;
+}
+.footer-icons img{
+  width: auto;
+  height: 20px;
 }
 
 /*--------------------------------------------------------------
@@ -1980,8 +1984,6 @@ section,
 }
 
 .contact .php-email-form {
-  background: color-mix(in srgb, var(--default-color), transparent 96%);
-  padding: 30px;
   height: 100%;
 }
 

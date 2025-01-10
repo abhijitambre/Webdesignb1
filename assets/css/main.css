@@ -170,10 +170,12 @@ h6 {
 .header .btn-getstarted:focus {
   color: var(--contrast-color);
   background: var(--accent-color);
-  font-size: 15px;
-  padding: 8px 25px;
-  margin: 0 0 0 30px;
+  font-size: 13.56px;
+  line-height: 20.3px;
+  padding: 12px 36px;
+  margin: 0;
   transition: 0.3s;
+  letter-spacing: 0.7px;
   font-weight: 400;
 }
 
@@ -239,8 +241,6 @@ h6 {
 
 .header .btn-getstarted {
   order: 3;
-  margin: 0 15px 0 0;
-  padding: 6px 15px;
 }
 
 .header .navmenu {
@@ -517,7 +517,7 @@ h6 {
 --------------------------------------------------------------*/
 .footer {
   color: var(--default-color);
-  background-color: #2C2F44;
+  background-color: #2c2f44;
   font-size: 14px;
   padding: 20px 0;
   position: relative;
@@ -681,7 +681,7 @@ h6 {
   margin-top: 6px;
   font-size: 13px;
 }
-.footer-icons img{
+.footer-icons img {
   width: auto;
   height: 20px;
 }
@@ -817,11 +817,11 @@ section,
 }
 .section-title h4 {
   color: #313131;
-  font-family: "area-normal", sans-serif;;
+  font-family: "area-normal", sans-serif;
   font-size: 10px;
   font-weight: 400;
-  line-height: 14.66px;
-  letter-spacing: 2px;
+  line-height: 18.9px;
+  letter-spacing: 0.42px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
@@ -830,9 +830,11 @@ section,
 .section-title h2 {
   color: var(--heading-color);
   margin: 0;
-  margin-bottom: 1rem;
-  font-size: 32px;
+  margin-bottom: 0rem;
+  line-height: 45px;
+  font-size: 26px;
   font-weight: 600;
+  letter-spacing: 0.5px;
   font-family: var(--heading-font);
 }
 
@@ -840,50 +842,49 @@ section,
   color: var(--accent-color);
 }
 
-
-.d-grid{
+.d-grid {
   display: grid;
-} 
-.grid-1-1{
+}
+.grid-1-1 {
   grid-template-columns: 1fr 1fr;
 }
-.grid-2-1{
+.grid-2-1 {
   grid-template-columns: 2fr 1fr;
 }
-.grid-1-2{
+.grid-1-2 {
   grid-template-columns: 1fr 2fr;
 }
-.gap-10{
+.gap-10 {
   gap: 10px;
 }
-.gap-30{
+.gap-30 {
   gap: 30px;
 }
-.gap-40{
+.gap-40 {
   gap: 40px;
 }
-.gap-50{
+.gap-50 {
   gap: 50px;
 }
-.gap-100{
+.gap-100 {
   gap: 100px;
 }
-.text-justify{
+.text-justify {
   text-align: justify;
 }
-.width-max-content{
+.width-max-content {
   width: max-content;
 }
-.width-auto{
+.width-auto {
   width: auto;
 }
-.text-red{
+.text-red {
   color: #952020;
 }
-.px-20{
+.px-20 {
   padding: 0 20px;
 }
-.border-width-2{
+.border-width-2 {
   border-width: 2px;
   opacity: 1;
 }
@@ -897,16 +898,17 @@ section,
   padding: 80px 0 60px 0;
   display: flex;
   align-items: center;
-  background: url(../img/banner/banner.png) top center no-repeat;
+  background: url(../img/banner/herobanner.svg) top center no-repeat;
   background-size: cover;
 }
 
 .hero h1 {
   margin: 0;
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 400;
   color: #fff;
-  line-height: 56px;
+  line-height: 45px;
+  letter-spacing: 0.5px;
 }
 
 .hero p {
@@ -1001,6 +1003,12 @@ section,
 /*--------------------------------------------------------------
 # Bread Crumb Section
 --------------------------------------------------------------*/
+.breadcrumb{
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 14.7px;
+  letter-spacing: 2px;
+}
 .breadcrumb-item + .breadcrumb-item {
   padding-left: 1.5rem;
   color: #313131;
@@ -1127,9 +1135,6 @@ section,
   font-family: var(--heading-font);
   font-size: 16px;
 }
-.stats h5 {
-  font-size: 28px;
-}
 .line::after {
   content: "";
   width: 15%;
@@ -1151,7 +1156,9 @@ section,
 .mt-60 {
   margin-top: 60px;
 }
-
+.py-120{
+  padding-bottom: 120px;
+}
 .text-right {
   text-align: right;
 }
@@ -1186,7 +1193,12 @@ section,
   background: var(--accent-color);
   color: var(--contrast-color);
 }
+.detail-box p{
+  font-size: 16px;
+  font-weight: 400;
+  color: #313131;
 
+}
 /*--------------------------------------------------------------
 # Alt Features Section
 --------------------------------------------------------------*/
@@ -1773,21 +1785,6 @@ section,
   overflow: hidden;
 }
 
-.team .team-member .member-img:after {
-  position: absolute;
-  content: "";
-  left: -1px;
-  right: -1px;
-  bottom: -1px;
-  height: 100%;
-  background-color: var(--surface-color);
-  -webkit-mask: url("../img/team-shape.svg") no-repeat center bottom;
-  mask: url("../img/team-shape.svg") no-repeat center bottom;
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  z-index: 1;
-}
-
 .team .team-member .social {
   position: absolute;
   right: -100%;
@@ -1817,20 +1814,21 @@ section,
 }
 
 .team .team-member .member-info {
-  padding: 10px 0px 20px;
+  padding: 20px 0px;
 }
 
 .team .team-member .member-info h4 {
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 5px;
-  font-size: 20px;
+  color: #313131;
+  font-size: 16px;
 }
 
 .team .team-member .member-info span {
   display: block;
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 400;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  color: #313131;
 }
 
 .team .team-member .member-info p {
@@ -1840,8 +1838,6 @@ section,
   line-height: 26px;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
-
-
 
 .team .team-member:hover .social {
   right: 8px;
@@ -1957,23 +1953,30 @@ section,
 }
 
 /*--------------------------------------------------------------
+# separator Section
+--------------------------------------------------------------*/
+.separator h4{
+  font-size: 20px;
+  font-weight: 400;
+}
+/*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
-.contact .info-item {
-  background: color-mix(in srgb, var(--default-color), transparent 96%);
-  padding: 30px;
-}
+
 
 .contact .info-item i {
   font-size: 38px;
   line-height: 0;
   color: var(--accent-color);
 }
-
-.contact .info-item h3 {
+.contact .info-item p{
   font-size: 20px;
-  font-weight: 700;
-  margin: 20px 0 10px 0;
+  font-weight: 100;
+}
+.contact .info-item h5 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #952020;
 }
 
 .contact .info-item p {
@@ -1986,48 +1989,92 @@ section,
 .contact .php-email-form {
   height: 100%;
 }
-
-.contact .php-email-form input[type="text"],
-.contact .php-email-form input[type="email"],
-.contact .php-email-form textarea {
-  font-size: 14px;
-  padding: 10px 15px;
-  box-shadow: none;
+.form-floating > .form-control,
+.form-floating > .form-control-plaintext,
+.form-floating > .form-select {
+  height: calc(2.875rem + 2px);
+  min-height: calc(2.875rem + 2px);
+  line-height: 1.25;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #2c2f44;
+  color: #000;
+  font-weight: 300;
+  font-size: 12px;
   border-radius: 0;
-  color: var(--default-color);
-  background-color: color-mix(
-    in srgb,
-    var(--background-color),
-    transparent 50%
-  );
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
-
-.contact .php-email-form input[type="text"]:focus,
-.contact .php-email-form input[type="email"]:focus,
-.contact .php-email-form textarea:focus {
-  border-color: var(--accent-color);
+.form-floating > .form-control,
+.form-floating > .form-control-plaintext {
+  padding: 1rem 1rem;
 }
-
-.contact .php-email-form input[type="text"]::placeholder,
-.contact .php-email-form input[type="email"]::placeholder,
-.contact .php-email-form textarea::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
+.form-floating > .form-control:focus,
+.form-floating > .form-control:not(:placeholder-shown),
+.form-floating > .form-control-plaintext:focus,
+.form-floating > .form-control-plaintext:not(:placeholder-shown) {
+  padding-top: 30.5px;
+  padding-bottom: 9.5px;
+  box-shadow: none;
 }
-
-.contact .php-email-form button[type="submit"] {
-  background: var(--accent-color);
+.form-floating > label {
+  color: #82847f;
+  font-weight: 300;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.form-btn{
   color: var(--contrast-color);
-  border: 0;
-  padding: 10px 30px;
-  transition: 0.4s;
-  border-radius: 4px;
+  background: var(--accent-color);
+  font-size: 13.56px;
+  line-height: initial;
+  padding: 12px 36px;
+  margin: 0;
+  transition: 0.3s;
+  font-weight: 400;
+  border: none;
+  box-shadow: none;
 }
-
-.contact .php-email-form button[type="submit"]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+.form-floating > label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  height: 100%;
+  padding: 1rem 7px 5px;
+  overflow: hidden;
+  text-align: start;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  pointer-events: none;
+  text-wrap: wrap;
+  border: var(--phoenix-border-width) solid rgba(0, 0, 0, 0);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transition: opacity 0.1s ease-in-out,
+    -webkit-transform 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+  -o-transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out,
+    -webkit-transform 0.1s ease-in-out;
 }
-
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label,
+.form-floating > .form-control-plaintext ~ label,
+.form-floating > .form-select ~ label {
+  -webkit-transform: scale(0.85) translateY(-0.4rem) translateX(0.15rem);
+  -ms-transform: scale(0.85) translateY(-0.4rem) translateX(0.15rem);
+  transform: scale(0.85) translateY(-0.4rem) translateX(0.15rem);
+  background-color: transparent;
+  color: #000;
+}
+.form-floating > .form-control-plaintext ~ label::after,
+.form-floating > .form-control:focus ~ label::after,
+.form-floating > .form-control:not(:placeholder-shown) ~ label::after,
+.form-floating > .form-select ~ label::after {
+  background-color: transparent;
+}
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
@@ -2874,4 +2921,25 @@ section,
   padding-left: 5px;
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+# css for fonts
+--------------------------------------------------------------*/
+
+.ft-16{
+  font-size: 16px;
+}
+.ft-24{
+  font-size: 36px;
+}
+.ft-24{
+  font-size: 36px;
+}
+.regular{
+  font-weight: 400;
 }

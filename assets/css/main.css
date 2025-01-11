@@ -56,7 +56,9 @@
 :root {
   scroll-behavior: smooth;
 }
-
+.color-blue {
+  color: var(--heading-color);
+}
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
@@ -833,7 +835,8 @@ section,
   margin-bottom: 0rem;
   line-height: 45px;
   font-size: 26px;
-  font-weight: 600;
+  font-weight: 400;
+  text-transform: uppercase;
   letter-spacing: 0.5px;
   font-family: var(--heading-font);
 }
@@ -1003,7 +1006,7 @@ section,
 /*--------------------------------------------------------------
 # Bread Crumb Section
 --------------------------------------------------------------*/
-.breadcrumb{
+.breadcrumb {
   font-size: 10px;
   font-weight: 500;
   line-height: 14.7px;
@@ -1138,25 +1141,25 @@ section,
 .line::after {
   content: "";
   width: 15%;
-  height: 1px;
+  height: 2px;
   right: -11%;
   position: absolute;
-  background: #bab6b1;
+  background: #2c2f44;
   top: 17px;
 }
 .line::before {
   content: "";
   width: 15%;
-  height: 1px;
+  height: 2px;
   left: -11%;
   position: absolute;
-  background: #bab6b1;
+  background: #2c2f44;
   top: 17px;
 }
 .mt-60 {
   margin-top: 60px;
 }
-.py-120{
+.py-120 {
   padding-bottom: 120px;
 }
 .text-right {
@@ -1193,11 +1196,10 @@ section,
   background: var(--accent-color);
   color: var(--contrast-color);
 }
-.detail-box p{
+.detail-box p {
   font-size: 16px;
   font-weight: 400;
   color: #313131;
-
 }
 /*--------------------------------------------------------------
 # Alt Features Section
@@ -1955,7 +1957,7 @@ section,
 /*--------------------------------------------------------------
 # separator Section
 --------------------------------------------------------------*/
-.separator h4{
+.separator h4 {
   font-size: 20px;
   font-weight: 400;
 }
@@ -1963,13 +1965,12 @@ section,
 # Contact Section
 --------------------------------------------------------------*/
 
-
 .contact .info-item i {
   font-size: 38px;
   line-height: 0;
   color: var(--accent-color);
 }
-.contact .info-item p{
+.contact .info-item p {
   font-size: 20px;
   font-weight: 100;
 }
@@ -2021,7 +2022,7 @@ section,
   font-size: 12px;
   text-transform: uppercase;
 }
-.form-btn{
+.form-btn {
   color: var(--contrast-color);
   background: var(--accent-color);
   font-size: 13.56px;
@@ -2923,23 +2924,22 @@ section,
   font-size: 14px;
 }
 
-
-
-
-
 /*--------------------------------------------------------------
 # css for fonts
 --------------------------------------------------------------*/
 
-.ft-16{
+.ft-16 {
   font-size: 16px;
 }
-.ft-24{
+.lh-28{
+  line-height: 28px;
+}
+.ft-24 {
+  font-size: 24px;
+}
+.ft-36 {
   font-size: 36px;
 }
-.ft-24{
-  font-size: 36px;
-}
-.regular{
+.regular {
   font-weight: 400;
 }
